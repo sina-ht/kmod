@@ -19,7 +19,8 @@ AM_CPPFLAGS = \
 	-include $(top_builddir)/config.h \
 	-I$(top_srcdir) \
 	-DSYSCONFDIR=\""$(sysconfdir)"\" \
-	${zlib_CFLAGS}
+	${zlib_CFLAGS} \
+	${libcrypto_CFLAGS}
 
 AM_CFLAGS = $(OUR_CFLAGS)
 AM_LDFLAGS = $(OUR_LDFLAGS)
