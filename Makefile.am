@@ -21,7 +21,8 @@ AM_CPPFLAGS = \
 	-DSYSCONFDIR=\""$(sysconfdir)"\" \
 	${zlib_CFLAGS} \
 	${libcrypto_CFLAGS} \
-	${liblzma_CFLAGS}
+	${liblzma_CFLAGS} \
+	${libzstd_CFLAGS}
 
 AM_CFLAGS = $(OUR_CFLAGS)
 AM_LDFLAGS = $(OUR_LDFLAGS)
